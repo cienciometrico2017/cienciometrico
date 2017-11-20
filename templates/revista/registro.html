@@ -1,0 +1,74 @@
+{% extends 'base/base.html' %}
+{% block extrastatic %}
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+   <link rel="stylesheet" href="static/css/animate.min.css">
+{% endblock %}
+{% block content %}
+<br><br><br><br>
+<form method="post">
+    <div class="wow fadeInUp animated" style="background: #AFB5B9; height:20%;  padding: 1cm 3cm 1cm 3cm;" >
+     <h2 align="center" style="color:white"><span class="glyphicon glyphicon-plus"></span>NUEVA <span style="color:#FC9C30">REVISTA</span> </h2>
+        </div>
+    <br>
+    <div class="row" >
+
+		<div class="col-md-8 col-md-offset-2">
+			<div class="form-group">
+				<label>Nombre</label>
+                <input class="form-control" type="text"/>
+
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-8 col-md-offset-2">
+			<div class="form-group">
+				<label >ISSN</label>
+                <input class="form-control" type="text" style=""/>
+
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-8 col-md-offset-2">
+			<div class="form-group">
+				<label >Base de Datos Indexada</label>
+				<input class="form-control" type="text">
+			</div>
+		</div>
+	</div>
+    <div class="row">
+		<div class="col-md-8 col-md-offset-2">
+			<div class="form-group">
+				<label >Cuartil Perteneciente</label>
+				<input class="form-control" type="text">
+			</div>
+		</div>
+	</div>
+    <div class="row">
+		<div class="col-md-8 col-md-offset-2">
+			<div class="form-group">
+				<label >Factor de Impacto</label>
+				<input class="form-control" type="text">
+			</div>
+		</div>
+	</div>
+    <div class="row">
+		<div class="col-md-8 col-md-offset-2">
+			<div class="form-group">
+				<label >Link</label>
+				<input class="form-control" type="text">
+			</div>
+		</div>
+	</div>
+    <div class="row">
+		<div class="col-md-8 col-md-offset-2">
+			<div class="form-group">
+				<button class="btn btn-primary "type="submit">Guardar</button>
+			</div>
+		</div>
+	</div>
+</form>
+{% endblock %}

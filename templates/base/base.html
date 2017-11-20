@@ -1,0 +1,131 @@
+{% load staticfiles %}
+<!Doctype html>
+<html>
+<head>
+	{% block extrastatic %}
+
+   <link rel="stylesheet" href="static/css/styles.css">
+    <link rel="stylesheet" href="static/css/animate.min.css">
+<link rel="stylesheet" href="{% static 'css/login.css'%}">
+   <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+   <script src="static/js/script.js"></script>
+	 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  {% endblock %}
+    <title>{% block title %}Document {% endblock %}</title>
+   <meta charset='utf-8'>
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+
+</style>
+</head>
+<body>
+{% block navbar %}
+<nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="{% url 'inicio:principal' %}"><span style="color:#FC9C30">SIVPCE CIYA</span></a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="{% url 'inicio:principal' %}">Inicio</a></li>
+        <li>
+          <a  href="{% url 'inicio:produccion' %}">Producción Científica </a>
+
+        </li>
+        <li><a href="{% url 'inicio:similar' %}">Similares</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+               <li><a href="{% url 'login' %}"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+{% endblock %}
+{% block content %}
+  <h4>  Bloque de contenido   </h4>
+
+  {% endblock %}
+
+<br><br><br><br>
+{% block footer %}
+ <div  style="background-image: url(static/images/social-bg.jpg); background-size:cover; background-position: center center;background-attachment:fixed; background:black">
+			<div class="social_overlay section-padding">
+				<div class="container" >
+					<div class="row text-center" >
+						<div class="section-title text-center">
+							<h2 style="color:white"><span style="color:#FC9C30">SIGUENOS </span> EN</h2>
+							<div></div>
+						</div>
+						<div class="col-md-2 col-sm-4 col-xs-6 wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.1s" data-wow-offset="0" style=" visibility: visible; animation-duration: 1s; animation-delay: 0.1s; animation-name: fadeInLeft; background: #6181C4">
+							<div class="single_social_profile social_profile_color_one">
+								<a href="#">
+									<div style="display: inline-block; background-color: #3b5998; color: #fff; padding: 25px; box-shadow: 0 0 0 5px rgba(0,0,0,.1) inset; -webkit-box-shadow: 0 0 0 5px rgba(0,0,0,.1) inset;  border-radius: 100%;  margin: 10px 0;"><i class="fa fa-facebook facebook fa-2x"></i></div>
+									<span></span>
+									<p style="color:white">FACEBOOK</p>
+								</a>
+							</div>
+						</div><!-- END COL -->
+						<div class="col-md-2  col-sm-4 col-xs-6 wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.2s" data-wow-offset="0" style="  visibility: visible; animation-duration: 1s; animation-delay: 0.2s; animation-name: fadeInLeft; background: #8DD4D5;">
+							<div class="single_social_profile social_profile_color_two">
+								<a href="#">
+									<div style="display: inline-block; background-color: #4FCCCD; color: #fff; padding: 25px; box-shadow: 0 0 0 5px rgba(0,0,0,.1) inset; -webkit-box-shadow: 0 0 0 5px rgba(0,0,0,.1) inset;  border-radius: 100%;  margin: 10px 0;"><i class="fa fa-twitter twitter fa-2x"></i></div>
+									<span></span>
+									<p style="color:white">TWITTER</p>
+								</a>
+							</div>
+						</div><!-- END COL -->
+						<div class="col-md-2 col-sm-4 col-xs-6 wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.3s" data-wow-offset="0" style="  visibility: visible; animation-duration: 1s; animation-delay: 0.3s; animation-name: fadeInLeft; background:#D27B70">
+							<div class="single_social_profile social_profile_color_three">
+								<a href="#">
+									<div style="display: inline-block; background-color: #d34836; color: #fff; padding: 25px; box-shadow: 0 0 0 5px rgba(0,0,0,.1) inset; -webkit-box-shadow: 0 0 0 5px rgba(0,0,0,.1) inset;  border-radius: 100%;  margin: 10px 0;"><i class="fa fa-google-plus google fa-2x"></i></div>
+									<span></span>
+									<p style="color:white">GOOGLE+</p>
+								</a>
+							</div>
+						</div><!-- END COL -->
+						<div class="col-md-2 col-sm-4 col-xs-6 wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.4s" data-wow-offset="0" style=" visibility: visible; animation-duration: 1s; animation-delay: 0.4s; animation-name: fadeInLeft; background:#7DB4CE">
+							<div class="single_social_profile social_profile_color_four">
+								<a href="#">
+									<div style="display: inline-block; background-color: #0e76a8; color: #fff; padding: 25px; box-shadow: 0 0 0 5px rgba(0,0,0,.1) inset; -webkit-box-shadow: 0 0 0 5px rgba(0,0,0,.1) inset;  border-radius: 100%;  margin: 10px 0;"><i class="fa fa-linkedin linkedin fa-2x"></i></div>
+									<span></span>
+									<p style="color:white">LINKEDIN</p>
+								</a>
+							</div>
+						</div><!-- END COL -->
+						<div class="col-md-2 col-sm-4 col-xs-6 wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.5s" data-wow-offset="0" style=" visibility: visible; animation-duration: 1s; animation-delay: 0.5s; animation-name: fadeInLeft; background:#DA716E">
+							<div class="single_social_profile social_profile_color_five">
+								<a href="#">
+									<div style="display: inline-block; background-color: #c4302b; color: #fff; padding: 25px; box-shadow: 0 0 0 5px rgba(0,0,0,.1) inset; -webkit-box-shadow: 0 0 0 5px rgba(0,0,0,.1) inset;  border-radius: 100%;  margin: 10px 0;"><i class="fa fa-youtube youtube fa-2x"></i></div>
+									<span></span>
+									<p style="color:white">YOUTUBE</p>
+								</a>
+							</div>
+						</div><!-- END COL -->
+						<div class="col-md-2 col-sm-4 col-xs-6 wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.6s" data-wow-offset="0" style=" visibility: visible; animation-duration: 1s; animation-delay: 0.6s; animation-name: fadeInLeft; background:#6AA2D0">
+							<div class="single_social_profile social_profile_color_six">
+								<a href="#">
+									<div style="display: inline-block; background-color: #3f729b; color: #fff; padding: 25px; box-shadow: 0 0 0 5px rgba(0,0,0,.1) inset; -webkit-box-shadow: 0 0 0 5px rgba(0,0,0,.1) inset;  border-radius: 100%;  margin: 10px 0;"><i class="fa fa-instagram instagram fa-2x"></i></div>
+									<span></span>
+									<p style="color:white">INSTAGRAM</p>
+								</a>
+							</div>
+						</div><!-- END COL -->
+					</div><!-- END ROW  -->
+				</div><!-- END CONTAINER  -->
+			</div>
+     <br>
+		</div>
+
+ {% endblock%}
+</body>
+</html>
