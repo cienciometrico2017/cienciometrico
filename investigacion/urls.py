@@ -18,9 +18,9 @@ from django.contrib import admin
 from django.contrib.auth.views import login, logout_then_login
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
-    url(r'^', include('apps.principal.urls', namespace="inicio")),
-    url(r'^investigacion/', include('apps.principal1.urls', namespace="investigacion")),
-    url(r'^ponencias/', include('apps.ponencias.urls', namespace="ponencia")),
+    url(r'^', include('app.principal.urls', namespace="inicio")),
+    url(r'^investigacion/', include('app.principal1.urls', namespace="investigacion")),
+
     url(r'^', include('django.contrib.auth.urls')),
     url(r'^accounts/login', login, {'template_name': 'base/login.html'}, name='login'),
     url(r'^logout/', logout_then_login, name='logout'),
