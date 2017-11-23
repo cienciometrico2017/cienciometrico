@@ -38,9 +38,39 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'apps.principal',
-    'apps.principal1',
-    'apps.ponencias',
+    'app.principal',
+    'app.principal1',
+    'app.ponencias',
+
+
+    'app.Pais',
+    'app.Provincia',
+    'app.Canton',
+    'app.Zona',
+    'app.Universidad',
+    'app.Unidades_Investigacion',
+    'app.Campus',
+    'app.Facultad',
+    'app.Carrera',
+    'app.Investigador',
+    'app.Bitacora',
+    'app.Grado_Competencia',
+    'app.Intereses_Formativos',
+    'app.Formacion_Complementaria',
+    'app.Privilegios',
+    'app.Investigaciones',
+    'app.Participaciones_Evemtos',
+    'app.Publicaciones',
+    'app.Proyectos',
+    'app.Otras_investigaciones',
+    'app.Datos_Profecionales',
+    'app.Formacion_Academica',
+    'app.Libro',
+    'app.Revista',
+    'app.Evento',
+    'app.Articulos_Cientificos',
+
+
 ]
 
 MIDDLEWARE = [
@@ -82,7 +112,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
         'NAME': 'investigacion',
         'USER': 'postgres',
-        'PASSWORD': '1727500363',
+        'PASSWORD': '1724542103',
         'HOST': 'localhost',
         'PORT': 5432,
     }
