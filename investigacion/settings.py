@@ -40,12 +40,6 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'app.principal',
     'app.principal1',
-<<<<<<< HEAD
-=======
-    'app.ponencias',
-
-
->>>>>>> 8a94e83c6eb1925dbad1190846df13c73d4ad2e6
     'app.Pais',
     'app.Provincia',
     'app.Canton',
@@ -71,13 +65,7 @@ INSTALLED_APPS = [
     'app.Libro',
     'app.Revista',
     'app.Evento',
-<<<<<<< HEAD
     'app.Articulos_Cientificos'
-=======
-    'app.Articulos_Cientificos',
-
-
->>>>>>> 8a94e83c6eb1925dbad1190846df13c73d4ad2e6
 ]
 
 MIDDLEWARE = [
@@ -119,7 +107,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
         'NAME': 'investigacion1',
         'USER': 'postgres',
-        'PASSWORD': '1724542103',
+        'PASSWORD': '1727500363',
         'HOST': 'localhost',
         'PORT': 5432,
     }
