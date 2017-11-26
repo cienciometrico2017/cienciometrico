@@ -6,7 +6,8 @@ from app.Pais.models import pais
 
 # Create your models here.
 class provincia (models.Model):
-    Nombre=models.CharField(max_length=15)
+    Nombre=models.CharField(max_length=50)
     pais=models.ForeignKey(pais,null=True ,blank=True ,on_delete=models.CASCADE)
 
-    def __unicode__(self): return '{}'.format(self.Nombre)
+    def __str__(self):  return '{}'.format(self.Nombre)
+

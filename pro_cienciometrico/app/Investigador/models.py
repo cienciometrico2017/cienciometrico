@@ -7,15 +7,17 @@ from django.db import models
 from app.Carrera.models import carrera
 
 class investigador(models.Model):
-    cedula=models.CharField(max_length=11)
-    Nombres=models.CharField(max_length=20)
-    Apellidos=models.CharField(max_length=20)
-    Direccion=models.TextField(50),
+    cedula=models.CharField(max_length=12)
+    Nombres=models.CharField(max_length=30)
+    Apellidos=models.CharField(max_length=30)
+    Direccion=models.TextField(100),
     Telefono=models.IntegerField()
     Email=models.EmailField()
     Genero=models.CharField(max_length=10)
-    Ciudadania=models.CharField(max_length=20)
+    Ciudadania=models.CharField(max_length=30)
 
     Usuario=models.CharField(max_length=10)
-    Password=models.CharField(max_length=20)
+    Password=models.CharField(max_length=30)
     carrera=models.ManyToManyField(carrera)
+
+    def __str__(self): return '{}'.format(self.Nombres)

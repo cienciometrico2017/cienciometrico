@@ -6,9 +6,8 @@ from django.db import models
 # Create your models here.
 
 class pais (models.Model):
-    Nombre=models.CharField(max_length=15)
-
-    def __unicode__(self): return '{}'.format(self.Nombre)
+ Nombre=models.CharField(max_length=50)
+ def __str__(self): return '{}'.format(self.Nombre)
 
 
 

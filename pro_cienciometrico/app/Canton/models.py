@@ -5,5 +5,7 @@ from django.db import models
 from app.Provincia.models import provincia
 # Create your models here.
 class canton (models.Model):
-    Nombre=models.CharField(max_length=15)
+    Nombre=models.CharField(max_length=20)
     provincia=models.ForeignKey(provincia,null=True ,blank=True ,on_delete=models.CASCADE)
+
+    def __str__(self): return '{}'.format(self.Nombre)

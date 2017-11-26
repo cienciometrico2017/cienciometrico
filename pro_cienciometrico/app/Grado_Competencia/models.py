@@ -9,3 +9,5 @@ from app.Investigador.models import investigador
 class grado_competencia(models.Model):
     Valor = models.IntegerField()
     investigador=models.ForeignKey(investigador,null=True,blank=True ,on_delete=models.CASCADE)
+
+    def __str__(self): return '{}'.format(self.Valor)

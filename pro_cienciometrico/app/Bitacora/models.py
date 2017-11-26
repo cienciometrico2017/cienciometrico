@@ -9,4 +9,6 @@ class bitacora (models.Model):
     investigador=models.ForeignKey(investigador,null=True ,blank=True ,on_delete=models.CASCADE)
     Hora=models.DateTimeField()
     Fecha=models.DateField()
-    Actividades=models.TextField(max_length=50)
+    Actividades=models.TextField(max_length=100)
+
+

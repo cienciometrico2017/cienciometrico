@@ -7,6 +7,8 @@ from django.db import models
 from app.Investigador.models import investigador
 
 class privilegios(models.Model):
-    Nombre=models.CharField(max_length=15)
-    Descripcion=models.CharField(max_length=50)
+    Nombre=models.CharField(max_length=40)
+    Descripcion=models.TextField(max_length=200)
     investigador=models.ForeignKey(investigador,null=True ,blank=True,on_delete=models.CASCADE)
+
+    def __str__(self): return '{}'.format(self.Nombres)

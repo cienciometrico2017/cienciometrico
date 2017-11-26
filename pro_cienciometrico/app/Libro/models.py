@@ -7,10 +7,14 @@ from django.db import models
 from app.Investigador.models import investigador
 
 class libro(models.Model):
-    Titulo=models.CharField(max_length=30)
+    Titulo=models.CharField(max_length=100)
     investigador = models.ForeignKey(investigador, null=True, blank=True, on_delete=models.CASCADE)
-    Editorial=models.CharField(max_length=15)
-    ISBN=models.CharField(max_length=15)
-    Resumen= models.DateField()
-    Ubicacion=models.CharField(max_length=15)
+    Editorial=models.CharField(max_length=50)
+    ISBN=models.CharField(max_length=20)
+    Resumen=models.FileField()
+    Ubicacion=models.CharField(max_length=50)
     Url=models.URLField()
+
+    def __str__(self): return '{}'.format(self.Titulo)
+
+

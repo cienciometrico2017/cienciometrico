@@ -9,7 +9,7 @@ from app.Provincia.models import provincia
 
 
 class articulos_cientificos (models.Model):
-    Nombre=models.CharField(max_length=20)
+    Nombre=models.CharField(max_length=30)
     Numero=models.IntegerField()
     Estado=models.CharField(max_length=15)
     Anio=models.IntegerField()
@@ -19,6 +19,6 @@ class articulos_cientificos (models.Model):
     Url=models.URLField()
     Fecha_Publicacion=models.DateField()
     investigador = models.ForeignKey(investigador, null=True, blank=True, on_delete=models.CASCADE)
-
+    def __str__(self): return '{}'.format(self.Nombre)
 
 

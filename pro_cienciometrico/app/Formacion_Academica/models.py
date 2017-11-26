@@ -7,7 +7,9 @@ from django.db import models
 
 from app.Investigador.models import investigador
 class formacion_academica(models.Model):
- Nivel_Estudios=models.CharField(max_length=15)
+ Nivel_Estudios=models.CharField(max_length=20)
  Fecha_Fin_Estudios=models.DateField()
- Nombre_Centro_Estudios=models.CharField(max_length=25)
+ Nombre_Centro_Estudios=models.CharField(max_length=50)
  investigador = models.ForeignKey(investigador, null=True, blank=True, on_delete=models.CASCADE)
+
+ def __str__(self): return '{}'.format(self.Nivel_Estudios)

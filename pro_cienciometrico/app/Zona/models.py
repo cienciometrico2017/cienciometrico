@@ -7,6 +7,8 @@ from app.Provincia.models import provincia
 
 # Create your models here.
 class zona (models.Model):
-    Nombre=models.CharField(max_length=20)
-    Descripcion=models.TextField(max_length=50)
+    Nombre=models.CharField(max_length=50)
+    Descripcion=models.TextField(max_length=100)
     provincia=models.ForeignKey(provincia,null=True ,blank=True ,on_delete=models.CASCADE)
+
+    def __str__(self): return '{}'.format(self.Nombre)
