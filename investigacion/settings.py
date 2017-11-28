@@ -40,10 +40,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'app.principal',
     'app.principal1',
-<<<<<<< HEAD
-=======
-    'app.ponencias',
->>>>>>> 62455c9caf1aafa2c1893822bf267456dff5434c
+    'app.Ponencia',
     'app.Pais',
     'app.Provincia',
     'app.Canton',
@@ -69,12 +66,8 @@ INSTALLED_APPS = [
     'app.Libro',
     'app.Revista',
     'app.Evento',
-<<<<<<< HEAD
+
     'app.Articulos_Cientificos'
-=======
-    'app.Articulos_Cientificos',
-    'app.Articulos_Cientificos',
->>>>>>> 62455c9caf1aafa2c1893822bf267456dff5434c
 ]
 
 MIDDLEWARE = [
