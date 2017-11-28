@@ -10,3 +10,6 @@ investigacion/__pycache__/settings.cpython-36.pyc
 *.iml
 .idea/misc.xml
 *.xml
+*.iml
+.idea/misc.xml
+investigacion/settings.py
