@@ -66,11 +66,7 @@ INSTALLED_APPS = [
     'app.Libro',
     'app.Revista',
     'app.Evento',
-<<<<<<< HEAD
-
-=======
->>>>>>> 07a5bda93c70ef5736ba8a5ad3a756564c25ce7a
-    'app.Articulos_Cientificos'
+    'app.Articulos_Cientificos',
 ]
 
 MIDDLEWARE = [
