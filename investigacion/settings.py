@@ -66,7 +66,10 @@ INSTALLED_APPS = [
     'app.Libro',
     'app.Revista',
     'app.Evento',
+<<<<<<< HEAD
 
+=======
+>>>>>>> 07a5bda93c70ef5736ba8a5ad3a756564c25ce7a
     'app.Articulos_Cientificos'
 ]
 
@@ -109,7 +112,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
         'NAME': 'investigacion',
         'USER': 'postgres',
-        'PASSWORD': '1727500363',
+        'PASSWORD': '1724542103',
         'HOST': 'localhost',
         'PORT': 5432,
     }
