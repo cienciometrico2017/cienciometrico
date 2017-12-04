@@ -8,7 +8,7 @@ from  app.Investigador.models import investigador
 class publicaciones(models.Model):
  Titulo = models.CharField(max_length=100)
  Nivel_Autoria=models.IntegerField()
- investigador = models.ForeignKey(investigador, null=True, blank=True, on_delete=models.CASCADE)
+ investigador = models.ManyToManyField(investigador)
  Palabras_Clave = models.TextField(200),
  Resumen = models.FileField()
  Fecha = models.DateField()

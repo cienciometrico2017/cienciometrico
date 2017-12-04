@@ -7,11 +7,11 @@ from django.db import models
 from app.Carrera.models import carrera
 
 class investigador(models.Model):
-    cedula=models.CharField(max_length=12)
+    cedula=models.CharField(max_length=12,primary_key=True)
     Nombres=models.CharField(max_length=30)
     Apellidos=models.CharField(max_length=30)
     Direccion=models.TextField(100),
-    Telefono=models.IntegerField()
+    Telefono=models.CharField(max_length=12)
     Email=models.EmailField()
     Genero=models.CharField(max_length=10)
     Ciudadania=models.CharField(max_length=30)

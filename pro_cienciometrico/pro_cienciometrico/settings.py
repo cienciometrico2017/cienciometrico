@@ -62,7 +62,8 @@ INSTALLED_APPS = [
     'app.Libro',
     'app.Revista',
     'app.Evento',
-    'app.Articulos_Cientificos'
+    'app.Articulos_Cientificos',
+    'app.Ponencia',
 
 ]
 

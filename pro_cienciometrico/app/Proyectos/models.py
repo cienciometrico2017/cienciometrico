@@ -10,9 +10,9 @@ from app.Investigador.models import investigador
 
 class proyectos(models.Model):
  Titulo = models.CharField(max_length=100)
- investigador = models.ForeignKey(investigador, null=True, blank=True, on_delete=models.CASCADE)
  Palabras_Clave = models.TextField(200),
  Documento= models.FileField()
  Tipo_Proyecto=models.CharField(max_length=50)
+ investigador = models.ManyToManyField(investigador)
 
  def __str__(self): return '{}'.format(self.Titulo)
