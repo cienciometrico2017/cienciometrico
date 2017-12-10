@@ -13,11 +13,12 @@ class investigador(models.Model):
     Direccion=models.TextField(100),
     Telefono=models.CharField(max_length=12)
     Email=models.EmailField()
-    Genero=models.CharField(max_length=10)
+    Genero=models.CharField(max_length=15)
     Ciudadania=models.CharField(max_length=30)
 
-    Usuario=models.CharField(max_length=10)
+    Usuario=models.CharField(max_length=15)
     Password=models.CharField(max_length=30)
     carrera=models.ManyToManyField(carrera)
+    Foto= models.ImageField(upload_to='photos/')
 
     def __str__(self): return '{}'.format(self.Nombres)
