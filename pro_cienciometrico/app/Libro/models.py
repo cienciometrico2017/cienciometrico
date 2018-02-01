@@ -15,6 +15,7 @@ class libro(models.Model):
     Url=models.URLField()
     Anio=models.CharField(max_length=5)
     investigador = models.ManyToManyField(investigador)
+    PalabrasClave = models.CharField(max_length=300)
 
     def __str__(self): return '{}'.format(self.Titulo)
 

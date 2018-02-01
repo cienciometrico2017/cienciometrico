@@ -14,5 +14,7 @@ class investigaciones (models.Model):
     Editor=models.CharField(max_length=50)
     Url=models.URLField()
     investigador = models.ManyToManyField(investigador)
+    Resumen = models.FileField()
+    PalabrasClave = models.CharField(max_length=300)
 
     def __str__(self): return '{}'.format(self.Titulo)

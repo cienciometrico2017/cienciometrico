@@ -22,6 +22,8 @@ class articulos_cientificos (models.Model):
     pais = models.ForeignKey(pais, null=True, blank=True, on_delete=models.CASCADE)
     ciudad=models.CharField(max_length=50)
     revista = models.ForeignKey(revista, null=True, blank=True, on_delete=models.CASCADE)
+    Resumen=models.FileField()
+    PalabrasClave=models.CharField(max_length=300)
 
 
 

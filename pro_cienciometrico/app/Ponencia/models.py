@@ -24,6 +24,7 @@ class ponencia (models.Model):
   evento=models.ForeignKey(evento,null=True,blank=True,on_delete=models.CASCADE)
   revista = models.ForeignKey(revista, null=True, blank=True, on_delete=models.CASCADE)
   libro = models.ForeignKey(libro, null=True, blank=True, on_delete=models.CASCADE)
+  PalabrasClave=models.CharField(max_length=300)
 
   def __str__(self): return '{}'.format(self.Datos)
 

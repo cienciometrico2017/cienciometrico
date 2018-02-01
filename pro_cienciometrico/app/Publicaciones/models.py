@@ -9,7 +9,7 @@ class publicaciones(models.Model):
  Titulo = models.CharField(max_length=100)
  Nivel_Autoria=models.IntegerField()
  investigador = models.ManyToManyField(investigador)
- Palabras_Clave = models.TextField(200),
+ Palabras_Clave = models.TextField(300),
  Resumen = models.FileField()
  Fecha = models.DateField()
  Editorial = models.CharField(max_length=50)

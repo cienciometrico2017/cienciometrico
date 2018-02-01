@@ -64,6 +64,11 @@ INSTALLED_APPS = [
     'app.Evento',
     'app.Articulos_Cientificos',
     'app.Ponencia',
+    'app.Sub_Lin_Investigacion',
+    'app.Linea_Investigacion',
+    'app.Ambito_Investigativo',
+    'app.Palabra_clave',
+    'app.Unidad_Investigacion',
 
 ]
 

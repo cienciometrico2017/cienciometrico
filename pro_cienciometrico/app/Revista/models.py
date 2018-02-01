@@ -17,6 +17,7 @@ class revista(models.Model):
  Url=models.URLField()
  Archivo = models.FileField()
  Numero_Revista=models.CharField(max_length=100)
+ PalabrasClave = models.CharField(max_length=300)
 
  def __str__(self): return '{}'.format(self.Nombre)
 
