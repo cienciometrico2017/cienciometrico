@@ -1,1 +1,0 @@
-# cienciometrico
